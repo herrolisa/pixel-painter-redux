@@ -3,9 +3,10 @@ import React from 'react';
 class Pixel extends React.Component {
   render() {
     return (
-      <div>
-        Pixel
-      </div>
+      <div
+        className="color-pixel"
+        style={{backgroundColor: this.props.pixelColor}}
+      />
     );
   }
 }

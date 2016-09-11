@@ -1,13 +1,13 @@
 import React from 'react';
+import Pixel from './Pixel';
 
 class Palette extends React.Component {
   render() {
-    const palettePixels = this.props.colors.map( (color, index) => {
+    const palettePixels = this.props.colors.map((color, index) => {
       return (
-        <div
-          key={index}
-          style={{backgroundColor: color}}
-          className="color-pixel"
+        <Pixel
+          key={ index }
+          pixelColor={ color }
         />
       )
     })
