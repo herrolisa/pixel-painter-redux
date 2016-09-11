@@ -4,21 +4,25 @@ import Pixel from './Pixel';
 class Canvas extends React.Component {
   render() {
     const canvasArray = this.props.defaultColors;
-    const rows = canvasArray.map((elem, index) => {
-      const cells = elem.map((color, index) => {
+    const rows = canvasArray.map((arr, index) => {
+      const cells = arr.map((color, index) => {
         return (
-          <Pixel key={index} pixelColor={color} />
+          <Pixel
+            key={index}
+            pixelColor={color}
+            cellName="canvas-cell"
+          />
         );
       })
       return (
         <div key={index} className="canvas-row">
-          {cells}
+          { cells }
         </div>
       );
     });
     return (
-      <div className="canvas-container">
-        {rows}
+      <div className="canvas">
+        { rows }
       </div>
     );
   }

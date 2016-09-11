@@ -6,13 +6,14 @@ class Palette extends React.Component {
     const palettePixels = this.props.colors.map((color, index) => {
       return (
         <Pixel
-          key={ index }
-          pixelColor={ color }
+          key={index}
+          pixelColor={color}
+          cellName="palette-cell"
         />
       )
     })
     return (
-      <div className="palette-container">
+      <div className="palette">
         { palettePixels }
       </div>
     );

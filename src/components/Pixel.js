@@ -4,7 +4,7 @@ class Pixel extends React.Component {
   render() {
     return (
       <div
-        className="color-pixel"
+        className={this.props.cellName}
         style={{backgroundColor: this.props.pixelColor}}
       />
     );
