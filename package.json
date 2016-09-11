@@ -4,6 +4,8 @@
   "description": "PixelPainter ============",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server src/app.js --module-bind 'js=babel' --inline --hot --content-base public --history-api-fallback",
+    "build": "webpack src/app.js public/js/app.js --module-bind 'js=babel'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
