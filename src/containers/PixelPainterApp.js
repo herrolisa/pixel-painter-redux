@@ -21,7 +21,7 @@ class PixelPainterApp extends React.Component {
       return (
         <div className="pixelPainter">
           <Palette colors={this.props.palette.colors}/>
-          <Canvas />
+          <Canvas defaultColors={this.props.canvas} />
         </div>
       );
     }
