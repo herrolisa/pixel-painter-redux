@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300);
 
+/*************************************/
+/********* GENERAL  SETTINGS *********/
+/*************************************/
 *{
   margin: 0;
   padding: 0;
@@ -11,7 +14,10 @@ body{
   background: url("../img/bg.jpg");
 }
 
-#pixelPainter{
+/*************************************/
+/** CONTAINER FOR PIXEL PAINTER APP **/
+/*************************************/
+#pixel-painter{
   /* container for all elements */
   margin: 25px auto;
   width: 800px;
@@ -19,12 +25,27 @@ body{
   box-sizing: border-box;
 }
 
-.left{
+.palette-container{
   /* left container (title, color palette, buttons) */
   width: 198px;
   height: 525px;
   float: left;
 }
+
+.canvas-container{
+  /* right container (canvas) */
+  width: 600px;
+  height: 525px;
+  float: right;
+/*  background: url("../img/canvas.png");
+  background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+
+
+
+
 
 .title{
   /* circular header container*/
@@ -79,7 +100,7 @@ h1{
   border: 3px #FFFFFF solid;
 }
 
-.paint{
+.color-pixel{
   /* individual paint cells */
   width: 20px;
   height: 20px;
@@ -107,15 +128,6 @@ button:active{
   background-color: #823B56;
 }
 
-.right{
-  /* right container (canvas) */
-  width: 600px;
-  height: 525px;
-  float: right;
-  background: url("../img/canvas.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 #pp-canvas{
   /* blank canvas */
